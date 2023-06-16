@@ -18,7 +18,6 @@ LAlt::LWin
 ;LWin::Ctrl
 ;LCtrl::Alt
 
-
 ; General
 CapsLock & Tab:: SetCapsLockState, % (t:=!t) ?  "On" :  "Off"
 CapsLock & i:: send {Up}
@@ -35,6 +34,8 @@ CapsLock & f:: send {Alt Down}f{Alt Up}
 CapsLock & c:: send {Alt Down}c{Alt Up}
 CapsLock & BackSpace:: send {Del}
 CapsLock & 4:: WinClose, A
+CapsLock & w:: send {Ctrl Down}w{Ctrl Up}
+CapsLock & r:: send #+s
 
 ; Media
 CapsLock & F11:: send {Volume_Down}
@@ -44,7 +45,6 @@ PgUp:: send {Volume_Up}
 del:: send {Media_Play_Pause}
 Home:: send {Media_Next}
 End:: send {Media_Prev}
-
 
 ; Auto reload script on save
 ~^s:: 
