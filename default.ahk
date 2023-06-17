@@ -22,9 +22,17 @@ CapsLock & d:: send {Alt Down}d{Alt Up}
 CapsLock & f:: send {Alt Down}f{Alt Up}
 CapsLock & c:: send {Alt Down}c{Alt Up}
 CapsLock & BackSpace:: send {Del}
+LAlt & BackSpace:: send ^a {BackSpace}
 CapsLock & 4:: WinClose, A
 CapsLock & w:: send {Ctrl Down}w{Ctrl Up}
 CapsLock & r:: send #+s
+CapsLock & Volume_Up::Media_Next
+CapsLock & Volume_Down::Media_Prev
+CapsLock & MButton::Volume_Mute
+CapsLock & WheelUp::Volume_Up
+CapsLock & WheelDown::Volume_Down
+CapsLock & XButton2::Media_Next
+CapsLock & XButton1::Media_Prev
 
 ; Media
 CapsLock & F11:: send {Volume_Down}
