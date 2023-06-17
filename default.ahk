@@ -7,17 +7,6 @@ SetTitleMatchMode, RegEx
 SetCapsLockState, AlwaysOff
 SetStoreCapsLockMode, Off 
 
-; Disable Win+L
-RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 0
-
-; Mac keyboard 1
-LWin::Alt
-LAlt::LWin
-
-; Mac keyboard 2
-;LWin::Ctrl
-;LCtrl::Alt
-
 ; General
 CapsLock & Tab:: SetCapsLockState, % (t:=!t) ?  "On" :  "Off"
 CapsLock & i:: send {Up}
