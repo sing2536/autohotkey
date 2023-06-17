@@ -26,6 +26,8 @@ LAlt & BackSpace:: send ^a {BackSpace}
 CapsLock & 4:: WinClose, A
 CapsLock & w:: send {Ctrl Down}w{Ctrl Up}
 CapsLock & r:: send #+s
+
+; Media
 CapsLock & Volume_Up::Media_Next
 CapsLock & Volume_Down::Media_Prev
 CapsLock & MButton::Volume_Mute
@@ -33,15 +35,6 @@ CapsLock & WheelUp::Volume_Up
 CapsLock & WheelDown::Volume_Down
 CapsLock & XButton2::Media_Next
 CapsLock & XButton1::Media_Prev
-
-; Media
-CapsLock & F11:: send {Volume_Down}
-CapsLock & F12:: send {Volume_Up}
-PgDn:: send {Volume_Down}
-PgUp:: send {Volume_Up}
-del:: send {Media_Play_Pause}
-Home:: send {Media_Next}
-End:: send {Media_Prev}
 
 ; Auto reload script on save
 ~^s:: 
