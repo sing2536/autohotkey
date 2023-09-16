@@ -38,7 +38,8 @@ CapsLock & XButton2::Media_Next
 CapsLock & XButton1::Media_Prev
 
 ; Auto reload script on save
+#IfWinActive, default.ahk.*
 ~^s:: 
-	IfWinActive, default.ahk 
-		Sleep, 200 
-		Reload
+ToolTip, RELOADING AHK SCRIPT
+Reload
+#IfWinActive
