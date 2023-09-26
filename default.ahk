@@ -28,8 +28,8 @@ CapsLock & w:: send {Ctrl Down}w{Ctrl Up}
 CapsLock & r:: send #+s
 
 ; Media
-CapsLock & Volume_Up::Media_Next
-CapsLock & Volume_Down::Media_Prev
+CapsLock & =::Media_Next
+CapsLock & -::Media_Prev
 CapsLock & MButton::Volume_Mute
 CapsLock & WheelUp::Volume_Up
 CapsLock & WheelDown::Volume_Down
