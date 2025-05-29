@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #SingleInstance, force
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 ; SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -20,12 +20,14 @@ CapsLock & [:: send {Home}
 CapsLock & ':: send {End}
 CapsLock & d:: send {Alt Down}d{Alt Up}
 CapsLock & f:: send {Alt Down}f{Alt Up}
-CapsLock & c:: send {Alt Down}c{Alt Up}
 CapsLock & BackSpace:: send {Del}
 LAlt & BackSpace:: send ^a {BackSpace}
 CapsLock & 4:: WinClose, A
 CapsLock & w:: send {Ctrl Down}w{Ctrl Up}
 CapsLock & r:: send #+s
+CapsLock & c:: Run, msedge
+CapsLock & v:: Run, powershell.exe -NoExit -Command "Set-Location 'C:\Users\%A_UserName%'"
+CapsLock:: send {Esc}
 
 ; Map Function keys to Windows actions
 F3::Send, {PrintScreen}
